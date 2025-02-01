@@ -1,0 +1,51 @@
+/* Position the chat bubble at the bottom right of the screen */
+.chat-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  /* Chat container will appear when the chat bubble is clicked */
+  .chat-container {
+    position: fixed;
+    bottom: 80px;  /* Adjust based on the height of the bubble */
+    right: 20px;
+    background-color: white;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+  }
+  
+  /* The chatbox area where messages will appear */
+  .chatbox {
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    max-height: 300px; /* Limit the height */
+  }
+  
+  /* Text input and buttons for sending messages */
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+  }

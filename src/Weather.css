@@ -1,0 +1,190 @@
+.weather-container {
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, rgba(135, 206, 235, 0.7), rgba(152, 251, 152, 0.7)); /* gradient background */
+  backdrop-filter: blur(10px); /* Background blur */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 0 auto; /* center container */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  position: relative; /* Needed for backdrop-filter to work properly */
+  margin-top: 30px; /* Adjust the value as needed */
+}
+
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #2f4f4f; /* darker text for contrast */
+}
+
+.location-input,
+input[type="text"] {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.location-input:focus,
+input[type="text"]:focus {
+  border-color: #4CAF50; /* border turns green on focus */
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.crop-selection {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.crop-selection select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 16px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.phone-input {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.phone-input input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.weather-info {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.weather-info h3 {
+  color: #2f4f4f;
+  margin-bottom: 15px;
+}
+
+.weather-info p {
+  margin: 10px 0;
+}
+
+.weather-info .temp,
+.weather-info .humidity,
+.weather-info .wind,
+.weather-info .rain {
+  background-color: #f0f8ff; /* light background for info cards */
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info .temp {
+  background-color: #ffcccb;
+}
+
+.weather-info .humidity {
+  background-color: #d3f9d8;
+}
+
+.weather-info .wind {
+  background-color: #d3f9f9;
+}
+
+.weather-info .rain {
+  background-color: #bde0fe;
+}
+
+.weather-info img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.weather-info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-info p strong {
+  margin-right: 8px;
+}
+
+.weather-info .status {
+  font-weight: bold;
+  color: #228b22; /* green color for favorable conditions */
+}
+
+.weather-info .warning {
+  font-weight: bold;
+  color: #ff6347; /* red color for warnings */
+}
+
+.phone-input label,
+.crop-selection label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .weather-container {
+    padding: 20px;
+  }
+
+  .weather-info {
+    width: 100%;
+  }
+
+  button,
+  .location-input,
+  .phone-input input,
+  .crop-selection select {
+    width: 100%;
+  }
+}

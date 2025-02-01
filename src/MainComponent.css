@@ -1,0 +1,33 @@
+/* General Styling */
+.main-content {
+    padding: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Quote Section */
+  .quote-section {
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #87ceeb, #98fb98);  
+  }
+  .quote-section h2 {
+    font-size: 2em;
+    color: #040a35;
+  }
+  
+  .quote-section p {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+ 
+
+
